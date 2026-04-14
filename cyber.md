@@ -1,0 +1,271 @@
+---
+layout: default
+title: "Cybersécurité"
+<div class="page-wrap">
+  <div class="page-body">
+    <div class="prestation-hero">
+      <svg class="prestation-picto" viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40 4 L72 18 L72 45 C72 63 57 78 40 86 C23 78 8 63 8 45 L8 18 Z" fill="#e8edf8" stroke="#1a3a8f" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="40" cy="34" r="10" fill="none" stroke="#1a3a8f" stroke-width="2"/>
+        <path d="M22 62 C22 50 58 50 58 62" fill="none" stroke="#1a3a8f" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div class="prestation-hero-text">
+        <div class="page-intro">
+          <p>Mon expertise couvre trois domaines complémentaires : la sensibilisation cybersécurité, la protection des données (RGPD) et les risques liés aux usages de l'IA en entreprise.</p>
+          <p>Mon intervention s'adapte à votre situation — elle peut couvrir l'ensemble du parcours ou se concentrer sur une étape spécifique.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENCART CYBERRÉFLEXES -->
+    <div class="cyberreflexes-encart">
+      <div class="cyberreflexes-tag">Programme phare</div>
+      <h2 class="cyberreflexes-titre">CyberRéflexes — Le programme annuel de sensibilisation conforme NIS2</h2>
+      <p class="cyberreflexes-desc">90% des cyberattaques impliquent un facteur humain. NIS2 vous oblige à agir. CyberRéflexes est un programme annuel de sensibilisation documenté, mesurable et ancré dans vos réalités terrain — conçu pour changer durablement les comportements, pas pour cocher une case.</p>
+      <a href="{{ '/cyberreflexes.html' | relative_url }}" class="cyberreflexes-lien">Découvrir CyberRéflexes →</a>
+    </div>
+
+    <div class="prestation-process">
+      <div class="process-step">
+        <div class="process-dot">01</div>
+        <div class="process-label">Diagnostic</div>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="process-dot">02</div>
+        <div class="process-label">Conception</div>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="process-dot">03</div>
+        <div class="process-label">Déploiement</div>
+      </div>
+      <div class="process-arrow">→</div>
+      <div class="process-step">
+        <div class="process-dot">04</div>
+        <div class="process-label">Structuration</div>
+      </div>
+      <div class="process-arrow">+</div>
+      <div class="process-step">
+        <div class="process-dot process-dot--special">05</div>
+        <div class="process-label">Marque blanche</div>
+      </div>
+    </div>
+
+    <div class="prestation-bloc">
+      <div class="prestation-content">
+        <div class="prestation-num">01</div>
+        <div class="prestation-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <circle cx="17" cy="17" r="10" fill="none" stroke="#2a5bd7" stroke-width="2.5"/>
+            <line x1="24" y1="24" x2="34" y2="34" stroke="#2a5bd7" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="prestation-text">
+          <h2>Diagnostic de vulnérabilités humaines</h2>
+          <p class="prestation-accroche">Avant de sensibiliser, il faut comprendre ce qui se passe vraiment.</p>
+          <ul>
+            <li>Entretien direction : pratiques existantes, incidents passés, perception du risque</li>
+            <li>Questionnaire anonyme collaborateurs : cyber, RGPD, IA</li>
+            <li>Profil de maturité collectif — pas de pointage individuel</li>
+            <li>Recommandations concrètes adaptées à votre réalité terrain</li>
+          </ul>
+          <div class="prestation-resultat"><strong>Ce que vous obtenez</strong> : un état des lieux clair et actionnable, pas un rapport générique.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prestation-bloc">
+      <div class="prestation-content">
+        <div class="prestation-num">02</div>
+        <div class="prestation-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="6" y="8" width="22" height="28" rx="3" fill="none" stroke="#2a5bd7" stroke-width="2.5"/>
+            <line x1="11" y1="16" x2="23" y2="16" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+            <line x1="11" y1="21" x2="23" y2="21" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+            <line x1="11" y1="26" x2="18" y2="26" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="30" cy="30" r="7" fill="#e8edf8" stroke="#2a5bd7" stroke-width="2"/>
+            <line x1="28" y1="30" x2="32" y2="30" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+            <line x1="30" y1="28" x2="30" y2="32" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="prestation-text">
+          <h2>Conception de programme de sensibilisation</h2>
+          <p class="prestation-accroche">Un programme qui change vraiment les comportements — pas une formation qu'on oublie le lendemain.</p>
+          <ul>
+            <li>Recueil des besoins et définition des objectifs pédagogiques</li>
+            <li>Plan mixte : formations, quiz d'ancrage, hub de ressources, évaluations</li>
+            <li>Formats adaptés à vos contraintes : présentiel, distanciel, blended</li>
+            <li>Validation du plan et proposition tarifaire avant toute réalisation</li>
+          </ul>
+          <div class="prestation-resultat"><strong>Ce que vous obtenez</strong> : un programme sur-mesure, cohérent avec vos contraintes opérationnelles, prêt à déployer.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prestation-bloc">
+      <div class="prestation-content">
+        <div class="prestation-num">03</div>
+        <div class="prestation-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <polyline points="6,28 14,18 20,24 28,12 34,16" fill="none" stroke="#2a5bd7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="34" cy="16" r="3" fill="#2a5bd7"/>
+          </svg>
+        </div>
+        <div class="prestation-text">
+          <h2>Accompagnement au déploiement</h2>
+          <p class="prestation-accroche">La conception ne suffit pas — c'est la mise en œuvre qui fait la différence.</p>
+          <ul>
+            <li>Création des contenus manquants</li>
+            <li>Communication interne et mise en place du planning</li>
+            <li>Sourcing formateurs si besoin, coordination des intervenants</li>
+            <li>Suivi de la réalisation et mesure de satisfaction à chaud et à froid</li>
+            <li>Clôture et bilan formalisé</li>
+          </ul>
+          <div class="prestation-resultat"><strong>Ce que vous obtenez</strong> : un pilotage rigoureux de A à Z et des indicateurs concrets pour mesurer l'impact réel sur les comportements.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prestation-bloc">
+      <div class="prestation-content">
+        <div class="prestation-num">04</div>
+        <div class="prestation-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <rect x="5" y="10" width="30" height="22" rx="3" fill="none" stroke="#2a5bd7" stroke-width="2.5"/>
+            <line x1="5" y1="17" x2="35" y2="17" stroke="#2a5bd7" stroke-width="2"/>
+            <line x1="14" y1="10" x2="14" y2="6" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+            <line x1="26" y1="10" x2="26" y2="6" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+            <line x1="12" y1="24" x2="20" y2="24" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+            <line x1="12" y1="28" x2="24" y2="28" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="prestation-text">
+          <h2>Création et structuration d'une offre de formation</h2>
+          <p class="prestation-accroche">Vous voulez devenir prestataire de formation ou structurer un catalogue interne — sans tâtonner seul face aux démarches.</p>
+          <ul>
+            <li>Obtention du numéro d'agrément et ingénierie du catalogue</li>
+            <li>Fiches marketing pour vendre vos formations</li>
+            <li>Outils qualité obligatoires : émargements, évaluations, attestations</li>
+            <li>Positionnement tarifaire</li>
+            <li>Accompagnement Qualiopi et mise en relation avec les bons interlocuteurs</li>
+            <li>Formation des équipes commerciales si besoin</li>
+          </ul>
+          <div class="prestation-resultat"><strong>Ce que vous obtenez</strong> : une structure opérationnelle, une offre cohérente et différenciée, les clés pour la développer.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prestation-bloc prestation-bloc--marque-blanche">
+      <div class="prestation-content">
+        <div class="prestation-num prestation-num--special">05</div>
+        <div class="prestation-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+            <circle cx="14" cy="16" r="6" fill="none" stroke="#2a5bd7" stroke-width="2.5"/>
+            <circle cx="28" cy="16" r="6" fill="none" stroke="#2a5bd7" stroke-width="2.5"/>
+            <path d="M4 34 C4 24 24 24 24 34" fill="none" stroke="#2a5bd7" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M22 28 C24 22 36 22 36 34" fill="none" stroke="#2a5bd7" stroke-width="2" stroke-linecap="round" stroke-dasharray="3,2"/>
+          </svg>
+        </div>
+        <div class="prestation-text">
+          <h2>Travailler ensemble en marque blanche</h2>
+          <p class="prestation-accroche">Vous conseillez des dirigeants de PME et souhaitez leur proposer une expertise cyber sans l'internaliser.</p>
+          <ul>
+            <li>Intervention sous votre nom, en toute discrétion</li>
+            <li>Accompagnement structuré de vos clients — la relation reste la vôtre</li>
+            <li>Vous élargissez votre offre sans recruter</li>
+            <li>Disponible en sous-traitance, co-construction ou intervention ponctuelle</li>
+          </ul>
+          <div class="prestation-resultat prestation-resultat--white"><strong>Ce que vous obtenez</strong> : une collaboration fluide, une intervention transparente pour vos clients, et un expert disponible quand vous en avez besoin.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prestation-cta">
+      <p><em>Parlons de votre projet.</em></p>
+      <a href="mailto:ofranchet@gmail.com">ofranchet@gmail.com</a>
+    </div>
+
+</div>
+</div>
+<style>
+.prestation-process { display: flex; align-items: center; gap: 8px; margin: 2em 0 2.5em; flex-wrap: wrap; }
+.process-step { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.process-dot { width: 40px; height: 40px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-family: 'DM Sans', sans-serif; font-size: 0.78em; font-weight: 700; }
+.process-dot--special { background: var(--blue-light); color: var(--blue); border: 2px solid var(--accent); }
+.process-label { font-family: 'DM Sans', sans-serif; font-size: 0.7em; color: var(--muted); text-align: center; white-space: nowrap; }
+.process-arrow { font-size: 1.2em; color: var(--border); margin-bottom: 18px; }
+.prestation-bloc { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); border-left: 4px solid var(--accent); padding: 28px 28px 24px; margin-bottom: 20px; transition: box-shadow 0.2s, transform 0.15s; }
+.prestation-bloc:hover { box-shadow: 0 4px 16px rgba(26, 58, 143, 0.1); transform: translateY(-2px); }
+.prestation-bloc--marque-blanche { border-left-color: var(--blue); background: var(--blue-light); }
+.prestation-content { display: flex; align-items: flex-start; gap: 16px; }
+.prestation-num { font-family: 'DM Serif Display', serif; font-size: 1.4em; color: var(--white); line-height: 1; flex-shrink: 0; width: 44px; text-align: center; background: var(--blue); border-radius: var(--radius); padding: 8px 0; }
+.prestation-num--special { background: var(--accent); }
+.prestation-icon { flex-shrink: 0; margin-top: 2px; }
+.prestation-text { flex: 1; }
+.prestation-text h2 { font-size: 1.15em; color: var(--blue); margin-top: 0; margin-bottom: 0.4em; border-bottom: none; padding-bottom: 0; }
+.prestation-accroche { font-style: italic; color: var(--muted); font-size: 0.92em; margin-bottom: 1em; }
+.prestation-text ul { margin-bottom: 1em; padding-left: 1.2em; }
+.prestation-text ul li { font-size: 0.92em; color: var(--text); margin-bottom: 0.3em; line-height: 1.6; }
+.prestation-resultat { background: var(--blue-light); border-radius: var(--radius); padding: 10px 14px; font-size: 0.88em; color: var(--text); line-height: 1.6; }
+.prestation-resultat--white { background: var(--white); }
+.prestation-cta { margin-top: 2.5em; padding-top: 1.5em; border-top: 1px solid var(--border); }
+.prestation-cta p { color: var(--muted); margin-bottom: 0.5em; }
+
+/* Encart CyberRéflexes */
+.cyberreflexes-encart {
+  background: var(--blue-dark);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  margin-bottom: 2.5em;
+  border-left: 4px solid var(--accent);
+}
+.cyberreflexes-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.cyberreflexes-titre {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.35em;
+  color: var(--white);
+  margin: 0 0 12px;
+  border-bottom: none;
+  padding-bottom: 0;
+  line-height: 1.3;
+}
+.cyberreflexes-desc {
+  font-size: 0.92em;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.75;
+  max-width: 620px;
+  margin-bottom: 20px;
+}
+.cyberreflexes-lien {
+  display: inline-block;
+  background: var(--white);
+  color: var(--blue) !important;
+  padding: 10px 22px;
+  border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.88em;
+  text-decoration: none !important;
+  transition: background 0.2s, transform 0.15s;
+}
+.cyberreflexes-lien:hover {
+  background: var(--blue-light);
+  transform: translateY(-1px);
+  text-decoration: none !important;
+}
+
+@media (max-width: 680px) {
+  .prestation-content { flex-direction: column; gap: 12px; }
+  .prestation-num { width: 36px; font-size: 1.2em; }
+  .process-dot { width: 32px; height: 32px; font-size: 0.7em; }
+  .process-label { font-size: 0.6em; }
+}
