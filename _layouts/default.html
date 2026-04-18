@@ -3,79 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Titre de la page : si la page a un titre défini, on l'affiche suivi de "— Eveïs Consulting" -->
-  <title>{% if page.title %}{{ page.title }} — {% endif %}Eveïs Consulting</title>
-  
-  <!-- Description pour les moteurs de recherche : utilise l'extrait de la page ou la description par défaut -->
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
-  
-  <!-- Police Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  
-  <!-- Feuille de style principale (CSS) -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  
-  <!-- ========== EN-TÊTE (HEADER) ========== -->
+
   <header class="site-header">
     <div class="header-inner">
-      <!-- Logo + nom du site (cliquable = retour accueil) -->
-      <a class="site-title" href="{{ '/' | relative_url }}" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-        <img src="{{ '/images/logo_eveis.png' | relative_url }}" alt="Eveïs Consulting" style="height:38px; width:auto; display:block;">
-        <span style="font-family:'DM Serif Display',serif; font-size:1.15em; font-weight:400; color:var(--blue); line-height:1.2;">Eveïs Consulting</span>
-      </a>
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
-    
-    <!-- Menu de navigation -->
     <div class="header-nav">
       <nav class="site-nav">
-        <!-- Checkbox cachée pour le menu burger sur mobile -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-burger">
           <span></span><span></span><span></span>
         </label>
-        
-        <!-- Liens du menu -->
         <div class="nav-links">
           <a href="{{ '/' | relative_url }}" class="nav-link">Accueil</a>
-          <a href="{{ '/formation.html' | relative_url }}" class="nav-link">Formation</a>
-          <a href="{{ '/cyber.html' | relative_url }}" class="nav-link">Cybersécurité</a>
-          <a href="{{ '/projets.html' | relative_url }}" class="nav-link">Projets</a>
-          <a href="{{ '/apropos.html' | relative_url }}" class="nav-link">À propos</a>
+          {% for page in site.header_pages %}
+            {% assign node = site.pages | where: "path", page | first %}
+            <a href="{{ node.url | relative_url }}" class="nav-link">
+              {{ node.title }}
+            </a>
+          {% endfor %}
         </div>
       </nav>
     </div>
   </header>
-  
-  <!-- ========== CONTENU PRINCIPAL ========== -->
-  <!-- C'est ici que s'affichera le contenu spécifique de chaque page -->
+
   <main class="page-content">
     {{ content }}
   </main>
-  
-  <!-- ========== PIED DE PAGE (FOOTER) ========== -->
+
   <footer class="site-footer">
     <div class="footer-inner">
-      <!-- Nom et slogan -->
-      <p class="footer-name">Eveïs Consulting — Odile Franchet</p>
-      <p class="footer-desc">Former. Sensibiliser. Sécuriser.</p>
-      
-      <!-- Liens sociaux et contact -->
-      <p class="footer-desc" style="margin-top:6px;">
-        <a href="{{ '/blog.html' | relative_url }}" style="color:#7a9ac8; text-decoration:none; font-size:0.85em;">Blog</a>
-        <span style="color:#4a6a98; margin:0 8px;">·</span>
-        <a href="https://www.linkedin.com/in/odile-franchet" target="_blank" style="color:#7a9ac8; text-decoration:none; font-size:0.85em;">LinkedIn</a>
-        <span style="color:#4a6a98; margin:0 8px;">·</span>
-        <a href="mailto:ofranchet@gmail.com" style="color:#7a9ac8; text-decoration:none; font-size:0.85em;">Contact</a>
-      </p>
-      
-      <!-- Copyright (année automatique) -->
-      <p class="footer-copy">© {{ 'now' | date: "%Y" }} Eveïs Consulting</p>
+      <p class="footer-name">{{ site.title }}</p>
+      <p class="footer-desc">Cybersécurité & Facteur humain — Former, sensibiliser, protéger</p>
+      <p class="footer-copy">© {{ 'now' | date: "%Y" }} Odile Franchet</p>
     </div>
   </footer>
-  
+
 </body>
 </html>
