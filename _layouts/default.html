@@ -13,7 +13,13 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a class="site-title" href="{{ '/' | relative_url }}" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <img src="{{ '/images/logo_eveis.png' | relative_url }}" alt="Eveïs Consulting" style="height:38px; width:auto; display:block;">
+        <span style="display:flex; flex-direction:column; gap:1px;">
+        <span style="font-family:'DM Serif Display',serif; font-size:1.1em; font-weight:400; color:var(--blue); line-height:1.2;">Eveïs Consulting</span>
+        <span style="font-family:'DM Sans',sans-serif; font-size:0.65em; font-weight:400; color:var(--muted); line-height:1.2;">Odile Franchet</span>
+         </span>
+      </a>
     </div>
     <div class="header-nav">
       <nav class="site-nav">
@@ -42,7 +48,7 @@
     <div class="footer-inner">
       <p class="footer-name">{{ site.title }}</p>
       <p class="footer-desc">Former, sensibiliser, protéger</p>
-      <p class="footer-copy">© {{ 'now' | date: "%Y" }} Odile Franchet</p>
+      <p class="footer-copy">© {{ 'now' | date: "%Y" }} Eveïs Consulting</p>
     </div>
   </footer>
 
