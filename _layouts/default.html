@@ -13,10 +13,11 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <img src="{{ '/images/logo_eveis.png' | relative_url }}" alt="Eveïs Consulting" style="height:52px; width:auto; display:block;">
+      <div style="display:flex; align-items:center; gap:14px;">
+      <img src="{{ '/images/logo_eveis.png' | relative_url }}" alt="Eveïs Consulting" style="height:72px; width:auto; display:block;">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
-    <div class="header-nav">
+      <div class="header-nav">
       <nav class="site-nav">
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-burger">
