@@ -1,11 +1,11 @@
-title: "Odile Franchet — Cybersécurité & Facteur humain"
+title: "Ëveïs Consulting — Odile FRANCHET"
 markdown: kramdown
 kramdown:
   parse_block_html: true
 
 header_pages:
   - apropos.md
-  - formations.md
+  - formation.md
   - prestations.md
   - projets.md
   - blog.md
