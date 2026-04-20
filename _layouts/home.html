@@ -3,8 +3,9 @@ layout: default
 ---
 <div class="hero">
   <div class="hero-inner">
-    <p class="hero-eyebrow">Ingénierie de formation & Sensibilisation Cybersécurité  </p>
+    <p class="hero-eyebrow">Ingénierie de formation & Sensibilisation Cybersécurité</p>
     <h1>Former - Sensibiliser - Protéger</h1>
+    <!-- Le sous-titre est maintenant centré comme le h1 -->
     <p class="hero-sub">25 ans d'expérience en ingénierie de formation — au service de vos projets formation et cyber</p>
   </div>
 </div>
@@ -15,6 +16,7 @@ layout: default
     
     <!-- Carte 1 -->
     <div class="home-porte">
+      <!-- Le tag est maintenant bleu -->
       <div class="home-porte-tag">ORGANISMES DE FORMATION</div>
       <h2 class="home-porte-titre">Développer votre activité</h2>
       <p class="home-porte-desc">Vous remportez des marchés, déployez des projets et faites évoluer votre offre.</p>
@@ -58,7 +60,7 @@ layout: default
   </div>
 </div>
 
-<!-- Productions -->
+<!-- Productions (mise en page préservée) -->
 <div class="home-productions">
   <div class="home-productions-inner">
     <p class="home-productions-label">Quelques productions récentes</p>
@@ -85,7 +87,7 @@ layout: default
 </div>
 
 <!-- CTA -->
-<div class="home-cible home-cible--cta">
+<div class="home-cible--cta">
   <p>Un projet ? Une question ? Parlons-en.</p>
   <a href="mailto:ofranchet@gmail.com" class="btn-email">ofranchet@gmail.com</a>
 </div>
@@ -142,6 +144,8 @@ body {
 .hero-sub {
   font-size: 1.2rem;
   opacity: 0.9;
+  /* Correction 2 : Le sous-titre est maintenant centré */
+  text-align: center;
 }
 .home-portes-wrap {
   background: var(--bg);
@@ -174,7 +178,8 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--accent);
+  /* Correction 3 : Le tag est maintenant bleu */
+  color: var(--blue);
 }
 .home-porte-titre {
   font-family: 'DM Serif Display', serif;
@@ -285,6 +290,7 @@ body {
 .btn-email:hover {
   background: var(--accent);
 }
+/* Correction 1 : Le "trait rouge" est supprimé. Il n'y a aucune propriété CSS ajoutant une bordure ou une ombre en haut de la page. */
 @media (max-width: 768px) {
   .home-portes-inner {
     grid-template-columns: 1fr;
