@@ -76,6 +76,7 @@ img { max-width: 100%; height: auto; }
 /* ===== HEADER ===== */
 .site-header {
   background: var(--white);
+  /* plus de bordure rouge */
   border-top: none;
   border-bottom: 1px solid var(--border);
   box-shadow: 0 1px 12px rgba(26, 58, 143, 0.07);
@@ -265,7 +266,8 @@ img { max-width: 100%; height: auto; }
   color: rgba(255,255,255,0.82);
   max-width: 560px;
   line-height: 1.75;
-  margin: 0;
+  margin: 0 auto;   /* pour centrer le bloc lui-même */
+  text-align: center;
 }
 
 /* Stat band */
@@ -1000,6 +1002,25 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
 }
 
+/* ===== CARTES ACCUEIL : puces bleues, liens bleus ===== */
+.home-porte ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+.home-porte li {
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+.home-porte li::marker {
+  color: var(--blue);
+}
+.home-porte-lien {
+  color: var(--blue) !important;
+}
+.home-porte-lien:hover {
+  color: var(--accent) !important;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 680px) {
   body { font-size: 16px; }
@@ -1041,5 +1062,30 @@ img { max-width: 100%; height: auto; }
   .format-grid { grid-template-columns: 1fr 1fr; }
   .apports-grid { grid-template-columns: 1fr; }
 
-  .home-productions-list { grid-template-columns: 1fr 1fr; }
+.home-productions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.home-prod-item {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+}
+.home-prod-item:hover {
+  padding-left: 8px;
+}
+.home-prod-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 100px;
+}
+.home-prod-title {
+  font-size: 0.95rem;
+  color: var(--blue);
 }
