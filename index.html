@@ -96,7 +96,7 @@ layout: default
   --blue: #1a3a8f;
   --blue-light: #eef3fc;
   --blue-dark: #0f2b5c;
-  --accent: #2a5bd7;    /* CHANGÉ : bleu au lieu de rouge */
+  --accent: #2a5bd7;    /* Bleu clair */
   --white: #ffffff;
   --bg: #f8fafd;
   --text: #1f2937;
@@ -201,13 +201,14 @@ body {
 .home-porte-lien {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--blue);  /* forcé en bleu */
   text-decoration: none;
   margin-top: auto;
   display: inline-block;
   align-self: flex-start;
 }
 .home-porte-lien:hover {
+  color: var(--blue) !important;  /* reste bleu au survol */
   text-decoration: underline;
 }
 .home-productions {
@@ -224,7 +225,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--accent);
+  color: var(--blue) !important;  /* bleu forcé */
   margin-bottom: 20px;
 }
 .home-productions-list {
@@ -247,7 +248,7 @@ body {
 .home-prod-tag {
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--blue) !important;  /* bleu forcé */
   min-width: 100px;
 }
 .home-prod-title {
@@ -257,7 +258,7 @@ body {
 .home-productions-link {
   display: inline-block;
   margin-top: 16px;
-  color: var(--accent);
+  color: var(--blue) !important;
   text-decoration: none;
   font-weight: 500;
 }
