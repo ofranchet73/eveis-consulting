@@ -4,8 +4,8 @@ kramdown:
   parse_block_html: true
 
 header_pages:
-  - apropos.md
-  - formation.md
+  - apropos.html
+  - formation.html
   - prestations.md
   - projets.md
   - blog.md
