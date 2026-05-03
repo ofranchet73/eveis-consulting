@@ -12,7 +12,6 @@ layout: default
 <!-- Trois cartes identiques -->
 <div class="home-portes-wrap">
   <div class="home-portes-inner">
-    
     <!-- Carte 1 -->
     <div class="home-porte">
       <div class="home-porte-tag">ORGANISMES DE FORMATION</div>
@@ -26,7 +25,6 @@ layout: default
       </ul>
       <a href="/formation.html" class="home-porte-lien">Voir l'offre formation →</a>
     </div>
-
     <!-- Carte 2 -->
     <div class="home-porte">
       <div class="home-porte-tag">ENTREPRISES</div>
@@ -40,7 +38,6 @@ layout: default
       </ul>
       <a href="/cyber.html" class="home-porte-lien">Voir l'offre cyber →</a>
     </div>
-
     <!-- Carte 3 -->
     <div class="home-porte">
       <div class="home-porte-tag">ACTEURS DE LA CYBER</div>
@@ -54,31 +51,30 @@ layout: default
       </ul>
       <a href="/acteurs.html" class="home-porte-lien">Voir l'offre →</a>
     </div>
-
   </div>
 </div>
 
-<!-- Productions (style liste verticale, fond de section coloré) -->
+<!-- Productions : cartes horizontales (grille) -->
 <div class="home-productions">
   <div class="home-productions-inner">
     <p class="home-productions-label">QUELQUES PRODUCTIONS RÉCENTES</p>
     <div class="home-productions-list">
-      <div class="home-prod-item">
+      <a href="/bd_cyber_linea_v5.html" class="home-prod-item">
         <span class="home-prod-tag">BD PÉDAGOGIQUE</span>
         <span class="home-prod-title">Le mail urgent</span>
-      </div>
-      <div class="home-prod-item">
+      </a>
+      <a href="/salle_des_suspects.html" class="home-prod-item">
         <span class="home-prod-tag">JEU INTERACTIF</span>
         <span class="home-prod-title">Salle des suspects</span>
-      </div>
-      <div class="home-prod-item">
+      </a>
+      <a href="/journee_camille_rgpd.html" class="home-prod-item">
         <span class="home-prod-tag">JEU INTERACTIF</span>
         <span class="home-prod-title">La journée de Camille — RGPD</span>
-      </div>
-      <div class="home-prod-item">
+      </a>
+      <a href="/pdf/5-risques-IA-Guide-Cybersecurite.pdf" class="home-prod-item">
         <span class="home-prod-tag">GUIDE PDF</span>
         <span class="home-prod-title">Les risques de l'IA au travail</span>
-      </div>
+      </a>
     </div>
     <a href="/projets.html" class="home-productions-link">Voir toutes les productions →</a>
   </div>
@@ -210,10 +206,10 @@ body {
   color: var(--blue) !important;
   text-decoration: underline;
 }
+/* Productions en grille avec cartes individuelles */
 .home-productions {
-  background: var(--blue-light);  /* fond bleu très clair pour la section */
   padding: 48px 0;
-  margin: 20px 0;
+  background: var(--white);
 }
 .home-productions-inner {
   max-width: var(--max-width);
@@ -231,28 +227,37 @@ body {
   padding-bottom: 4px;
 }
 .home-productions-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
 }
 .home-prod-item {
+  background: var(--blue-light);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
-  align-items: baseline;
-  gap: 24px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8px;
+}
+.home-prod-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(26,58,143,0.12);
 }
 .home-prod-tag {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--blue);
-  min-width: 140px;
+  font-size: 0.7rem;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--blue);
 }
 .home-prod-title {
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--blue);
-  font-weight: 500;
+  line-height: 1.3;
 }
 .home-productions-link {
   display: inline-block;
@@ -290,25 +295,27 @@ body {
 .btn-email:hover {
   background: var(--accent);
 }
-@media (max-width: 768px) {
-  .home-portes-inner {
-    grid-template-columns: 1fr;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .home-prod-item {
-    flex-direction: column;
-    gap: 4px;
-  }
-  .home-prod-tag {
-    min-width: auto;
-  }
-}
 .site-title:hover {
   color: var(--blue) !important;
 }
 .nav-link:hover {
   border-bottom-color: var(--blue) !important;
+}
+@media (max-width: 768px) {
+  .home-portes-inner {
+    grid-template-columns: 1fr;
+  }
+  .home-productions-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .home-productions-list {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
