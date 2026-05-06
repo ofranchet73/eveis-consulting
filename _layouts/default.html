@@ -25,13 +25,14 @@
           <label for="nav-toggle" class="nav-burger">
             <span></span><span></span><span></span>
           </label>
-          <div class="nav-links">
-            <a href="{{ '/' | relative_url }}" class="nav-link">Accueil</a>
-            {% for page in site.header_pages %}
-              {% assign node = site.pages | where: "path", page | first %}
-              <a href="{{ node.url | relative_url }}" class="nav-link">{{ node.title }}</a>
-            {% endfor %}
-          </div>
+         <div class="nav-links">
+          <a href="{{ '/' | relative_url }}" class="nav-link">Accueil</a>
+          <a href="{{ '/formation.html' | relative_url }}" class="nav-link">Organismes de formation</a>
+          <a href="{{ '/cyber.html' | relative_url }}" class="nav-link">Cybersécurité</a>
+          <a href="{{ '/projets.html' | relative_url }}" class="nav-link">Projets</a>
+          <a href="{{ '/apropos.html' | relative_url }}" class="nav-link">À propos</a>
+          <a href="{{ '/blog.html' | relative_url }}" class="nav-link">Blog</a>
+        </div>
         </nav>
       </div>
     </div>
