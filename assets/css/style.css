@@ -1083,3 +1083,47 @@ img { max-width: 100%; height: auto; }
   font-size: 0.95rem;
   color: var(--blue);
 }
+   /* ===== PAGE À PROPOS : PHOTO ET TEXTE PLUS GRANDS ===== */
+.apropos-photo {
+    width: 120px;
+    height: 120px;
+    border-width: 4px;
+}
+
+.apropos-accroche {
+    font-size: 1.5rem;
+}
+
+.apropos-tagline {
+    font-size: 1.1rem;
+}
+
+/* Responsive : réduire sur mobile */
+@media (max-width: 680px) {
+    .apropos-photo {
+        width: 90px;
+        height: 90px;
+    }
+    .apropos-accroche {
+        font-size: 1.2rem;
+    }
+    .apropos-tagline {
+        font-size: 1rem;
+    }
+}
+
+/* ===== ALIGNEMENT PARFAIT DU MENU SUR TOUTES LES PAGES ===== */
+.header-inner, .site-nav {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* Optionnel : si le menu reste décalé, force la largeur du header-nav */
+.header-nav .site-nav {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
