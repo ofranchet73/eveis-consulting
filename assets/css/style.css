@@ -14,7 +14,7 @@
   --bg:         #fafaf8;
   --white:      #ffffff;
   --radius:     6px;
-  --max-width:  860px;
+  --max-width:  1200px;
 }
 
 /* ===== RESET ===== */
@@ -137,23 +137,17 @@ img { max-width: 100%; height: auto; }
   transition: all 0.2s;
 }
 
-.nav-links { display: flex; align-items: center; gap: 2px; }
+.nav-links { display: flex; align-items: center; gap: 2rem; }  /* espacement plus grand */
 
 .nav-link {
-  font-size: 0.85em;
+  font-size: 1rem;          /* au lieu de 0.85em : plus gros */
   font-weight: 500;
   color: var(--muted);
-  padding: 10px 14px;
+  padding: 12px 18px;       /* plus de zone cliquable */
   border-bottom: 2px solid transparent;
   text-decoration: none;
   transition: all 0.2s;
   white-space: nowrap;
-}
-
-.nav-link:hover {
-  color: var(--blue);
-  border-bottom-color: var(--accent);
-  text-decoration: none;
 }
 
 /* ===== CONTENU PRINCIPAL ===== */
