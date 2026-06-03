@@ -1140,3 +1140,19 @@ img { max-width: 100%; height: auto; }
     font-weight: 500 !important;
     white-space: nowrap !important;
 }
+   /* Amélioration de la lisibilité des cartes (page OF et autres) */
+.projet-tag {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+.projet-titre {
+    font-size: 1.35rem !important;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+}
+.projet-desc {
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+}
