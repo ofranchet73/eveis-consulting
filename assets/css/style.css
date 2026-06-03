@@ -1126,4 +1126,17 @@ img { max-width: 100%; height: auto; }
     max-width: var(--max-width);
     margin-left: auto;
     margin-right: auto;
+
+/* Uniformisation stricte du menu sur toutes les pages */
+.nav-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem !important;   /* espacement identique à l'accueil */
+}
+
+.nav-link {
+    font-size: 1rem !important;   /* taille identique à l'accueil */
+    padding: 10px 14px !important; /* identique à l'accueil */
+    font-weight: 500 !important;
+    white-space: nowrap !important;
 }
