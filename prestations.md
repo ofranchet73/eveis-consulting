@@ -1,4 +1,0 @@
----
-layout: prestations
-title: "Prestations"
----
